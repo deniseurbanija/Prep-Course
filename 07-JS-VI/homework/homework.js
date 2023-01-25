@@ -4,17 +4,32 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
+  function Nombre(nombre){
+    nombre.toUpperCase(0)
+  }
+  function devolver(nombre, cb){
+    return cb(nombre)
+  }
+  devolver(nombre, Nombre)
 }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
+  Nombre(nombre);
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
+  function operación(n1, n2){
+    return n1 + n2
+  }
+  function callback(n1, n2, cb){
+    cb(n1, n2);
+  }
+  callback(n1, n2, operación)
 }
 
 function sumarArray(numeros, cb) {
@@ -22,12 +37,20 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
+  function sumar(a, b){
+    return a + b;
+  }
+  suma = numeros.reduce(sumar);
 }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
+  function mostrar(array){
+    return elemento;
+  }
+  array.forEach(mostrar)
 }
 
 function map(array, cb) {
@@ -35,6 +58,7 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  
 }
 
 function filter(array) {
