@@ -1,4 +1,21 @@
-h1{color:tomato}
-img{width: 400px; margin: 45px;}
-#thirdDiv{height: 600px; width: 500px; background-color: darkred; color: aliceblue; padding: 50px; border: 5px dashed black ;}
-#spanId{font-size: 18px; margin: 50px;}
+h1{
+    color:tomato
+}
+
+img{   width: 400px; 
+    margin: 45px;
+}
+
+#thirdDiv{
+    height: 600px; 
+    width: 500px; 
+    background-color: darkred; 
+    color: aliceblue; 
+    padding: 50px; 
+    border: 5px dashed black ;
+}
+
+#spanId{
+    font-size: 18px; 
+    margin: 50px;
+}
